@@ -1,0 +1,51 @@
+body {
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-form-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  margin-bottom: 0px;
+  vertical-align: top;
+}
+
+/*Override ant-design-vue style**/
+.ant-input[disabled] {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f9f9f9;
+}
+
+.ant-input-number[disabled] {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f9f9f9;
+}
+
+.ant-select-disabled {
+  color: rgba(0, 0, 0, 0.6);
+}
+.ant-select-disabled .ant-select-selection {
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.ant-modal-header {
+  background-color: #F5FAFA;
+}
+
+.ant-drawer-header {
+  background-color: #F5FAFA;
+}

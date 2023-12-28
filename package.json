@@ -1,0 +1,74 @@
+{
+  "name": "carnet-app",
+  "version": "1.0.0_09092021_10.00",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^2.1.1",
+    "@craco/craco": "^5.6.4",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^3.26.9",
+    "antd-mask-input": "^0.1.14",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "javascript-obfuscator": "^2.6.1",
+    "jwt-decode": "^2.2.0",
+    "localforage": "^1.9.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^16.13.1",
+    "react-error-boundary": "^4.0.11",
+    "react-highlight-words": "^0.20.0",
+    "react-iframe": "1.8.0",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.5.3",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-obfuscator": "^2.1.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "build:development": "env-cmd -f .env.development craco build",
+    "build:staging": "REACT_APP_ENV=staging craco build",
+    "build:production": "REACT_APP_ENV=production craco build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "NODE_ENV",
+      "REACT_APP_VERSION",
+      "REACT_APP_LOGIN",
+      "REACT_APP_NAME",
+      "PUBLIC_URL",
+      "REACT_APP_KC_SECRETKEY",
+      "REACT_APP_API_AMWS",
+      "REACT_APP_API_SAPABANKUM",
+      "REACT_APP_SLUG"
+    ]
+  }
+}
